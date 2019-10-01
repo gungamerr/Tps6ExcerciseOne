@@ -31,13 +31,13 @@
 				foreach ($list as $value) 
 				{
 					if($aidi === $value->getId())
-						$aidi++;
+						$_SESSION["id"]++;
 				}
 
 			}
 
 
-			$_SESSION["id"] = $aidi;
+			
 			$id = $_SESSION["id"];
 			$_SESSION["id"]++;
 			$cell = new Cellphone($id,$code,$brand ,$model,$price);

@@ -9,7 +9,7 @@
       <ul>
         <li><a href="<?php echo URL?>Home">Home</a></li>
         <li><a href="<?php echo URL?>">Add</a></li>
-        <li><a href="<?php echo URL?>Cellphone">List - Remove</a></li>
+        <li><a href="<?php echo URL?>Cellphone/List/">List - Remove</a></li>
       </ul>
     </div>
   </div>

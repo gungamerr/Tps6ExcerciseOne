@@ -1,9 +1,9 @@
 <?php
-	namespace Controller;
+	namespace Controllers;
 
 	class CellphoneController
 	{
-		public function Index($message = "")
+		public function List($message = "")
 		{
 			require_once(VIEWS_PATH."cellphone-list.php");	
 		}

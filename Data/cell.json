@@ -1,23 +1,30 @@
 [
     {
-        "id": 18,
-        "code": "1",
-        "brand": "Nokia",
-        "model": "1100",
-        "price": "50"
-    },
-    {
-        "id": 19,
-        "code": "2",
-        "brand": "Motorola",
-        "model": "V3",
-        "price": "100"
-    },
-    {
-        "id": 20,
+        "id": 1,
         "code": "3",
-        "brand": "Apple",
+        "brand": "pepecito",
+        "model": "papa",
+        "price": "5"
+    },
+    {
+        "id": 2,
+        "code": "4",
+        "brand": "Nokia",
         "model": "Iphone 7",
-        "price": "350"
+        "price": "3500"
+    },
+    {
+        "id": 3,
+        "code": "312",
+        "brand": "312",
+        "model": "31",
+        "price": "321"
+    },
+    {
+        "id": 4,
+        "code": "3",
+        "brand": "blackberry",
+        "model": "ls3100",
+        "price": "100"
     }
 ]
