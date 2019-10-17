@@ -4,9 +4,9 @@
 	use Models\Cellphone as Cellphone;
 	use DAO\CelphoneDao as CelphoneDao;
 
- class AddController
+ class CelphoneController
 	{
-
+        
 		private $cellDao;
 
 		public function __construct()
@@ -42,7 +42,17 @@
 			$_SESSION["id"]++;
 			$cell = new Cellphone($id,$code,$brand ,$model,$price);
 			$this->cellDao->add($cell);
-			header("Location: http://localhost/tps/ExerciseOne/");
-		}
+			header("Location: http://localhost/tps/ExerciseOne");
+        }
+        
+        public function remove($id)
+        {
+            $this->cellDao->removeCell($id);
+        }
+
+        public function getData()
+        {
+            return $this->cellDao->getAll();
+        }
 	}
 ?>

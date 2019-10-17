@@ -9,7 +9,7 @@
       <ul>
         <li><a href="<?php echo URL?>Home">Home</a></li>
         <li><a href="<?php echo URL?>">Add</a></li>
-        <li><a href="<?php echo URL?>Cellphone/List/">List - Remove</a></li>
+        <li><a href="<?php echo URL?>Home/List/">List - Remove</a></li>
       </ul>
     </div>
   </div>
@@ -20,7 +20,7 @@
     <div class="content"> 
       <div id="comments" >
         <h2>ADD NEW CELLPHONE</h2>
-        <form action="<?php echo URL?>Add/agregar/" method="post"  style="background-color: #EAEDED;padding: 2rem !important;">
+        <form action="<?php echo URL?>Celphone/agregar" method="post"  style="background-color: #EAEDED;padding: 2rem !important;">
           <table> 
             <thead>
               <tr>

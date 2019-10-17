@@ -24,6 +24,11 @@
 			return $this->retrieveData();
 		}	
 
+		public function removeCell($id)
+		{
+			$this->removeData($id);
+		}
+
 		private function saveData($list)
 		{
 			$arrayToencode = array();
@@ -68,6 +73,20 @@
 			}
 
 			return $list = array();
+		}
+
+		private function removeData($id)
+		{
+			$cellArray = $this->getAll();
+
+			foreach ($cellArray as $cell) 
+			{
+				if($id == $cell->getId())
+				{
+					unset($cellArray[$cell]);
+				}	
+				$this->saveData($cellArray);
+			}
 		}
 	}
 ?>
