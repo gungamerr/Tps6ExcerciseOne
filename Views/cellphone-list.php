@@ -20,7 +20,7 @@
     <!-- main body -->
     <div class="content"> 
       <div class="scrollable">
-      <form action="<?php echo URL ?>Celphone/remove/" method="POST">
+      <form action="<?php echo URL ?>Celphone/remove/" method="">
         <table style="text-align:center;">
           <thead>
             <tr>
@@ -32,17 +32,18 @@
             </tr>
           </thead>
           <tbody>
+          
             <?php foreach ($data as $cell) {?>
             <tr>
                 <td><?php echo $cell->getCode()?></td>
                 <td><?php echo $cell->getBrand()?></td>
                 <td><?php echo $cell->getModel()?></td>
                 <td><?php echo $cell->getPrice()?></td>
-                 <td>
-                  <button type="submit" class="btn" value="<?php echo $cell->getId();?>"> Remove </button>
+                <td>
+                  <button type="submit" class="btn" value="<?php echo $cell->getId()?>"> Remove </button>
                 </td>
             <?php }?>
-              </tr>
+            </tr>
           </tbody>
         </table></form> 
       </div>
