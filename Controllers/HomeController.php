@@ -8,7 +8,7 @@
         
         public function __construct()
         {
-            $this->cellController = new CelphoneController();
+            
         }
 
         public function Index($message = "")
@@ -18,8 +18,9 @@
 
         public function List($message = "")
         {
+            $this->cellController = new CelphoneController();
             $data = $this->cellController->getData();
-            require_once(VIEWS_PATH."cellphone-list.php");
+            require(VIEWS_PATH."cellphone-list.php");
         }
     }
 ?>

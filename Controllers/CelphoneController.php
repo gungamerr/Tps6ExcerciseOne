@@ -3,15 +3,17 @@
 	
 	use Models\Cellphone as Cellphone;
 	use DAO\CelphoneDao as CelphoneDao;
-
+	use Controllers\HomeController as HomeController;
  class CelphoneController
 	{
         
 		private $cellDao;
+		private $homeC;
 
 		public function __construct()
 		{
 			$this->cellDao = new CelphoneDao();
+			$this->homeC = new HomeController();
 		}
 
 
@@ -47,7 +49,11 @@
         
         public function remove($id)
         {
-            $this->cellDao->removeCell($id);
+			if($this->cellDao->removeCell($id))
+			{
+				$this->homeC->List();
+			}
+			
         }
 
         public function getData()

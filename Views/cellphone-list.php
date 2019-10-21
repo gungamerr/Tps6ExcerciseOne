@@ -20,7 +20,7 @@
     <!-- main body -->
     <div class="content"> 
       <div class="scrollable">
-      <form action="<?php echo URL ?>Celphone/remove/" method="">
+      <form action="<?php echo URL ?>Celphone/remove/" method="post">
         <table style="text-align:center;">
           <thead>
             <tr>
@@ -40,12 +40,14 @@
                 <td><?php echo $cell->getModel()?></td>
                 <td><?php echo $cell->getPrice()?></td>
                 <td>
-                  <button type="submit" class="btn" value="<?php echo $cell->getId()?>"> Remove </button>
+                  <button type="submit" name = 'id' class="btn" value="<?php echo $cell->getId();?>"> Remove </button>
                 </td>
-            <?php }?>
             </tr>
+            <?php }?>
+            
           </tbody>
-        </table></form> 
+        </table>
+        </form> 
       </div>
     </div>
     <!-- / main body -->

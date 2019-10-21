@@ -26,7 +26,8 @@
 
 		public function removeCell($id)
 		{
-			$this->removeData($id);
+			return $this->removeData($id);
+
 		}
 
 		private function saveData($list)
@@ -77,16 +78,20 @@
 
 		private function removeData($id)
 		{
+			$flag =false;
 			$cellArray = $this->getAll();
-
+			$i=0;
 			foreach ($cellArray as $cell) 
 			{
 				if($id == $cell->getId())
 				{
-					unset($cellArray[$cell]);
+					unset($cellArray[$i]);
+					$flag = true;
 				}	
+				$i++;
 				$this->saveData($cellArray);
 			}
+			return $flag;
 		}
 	}
 ?>
