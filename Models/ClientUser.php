@@ -1,15 +1,39 @@
 <?php
+        namespace Models;
     class ClientUser{
         //Username , Password
+        private $id;
         private $username;
         private $password;
 
-        public __construct()
+        public function __construct($id,$username,$pass)
         {
-
+                $this->setId($id);
+                $this->setUsername($username);
+                $this->setPassword($pass);
         }
 
-         /**
+        /**
+         * Get the value of id
+         */ 
+        public function getId()
+        {
+                return $this->id;
+        }
+
+        /**
+         * Set the value of id
+         *
+         * @return  self
+         */ 
+        public function setId($id)
+        {
+                $this->id = $id;
+
+                return $this;
+        }
+
+        /**
          * Get the value of username
          */ 
         public function getUsername()
@@ -48,5 +72,7 @@
 
                 return $this;
         }
+
+        
     }
 ?>

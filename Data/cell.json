@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "id": 1,
+        "code": "25",
+        "brand": "Iphone",
+        "model": "7",
+        "price": "3500"
+    },
+    {
+        "id": 3,
+        "code": "1",
+        "brand": "Nokia",
+        "model": "1100",
+        "price": "50"
+    }
+]
